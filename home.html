@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100%  70%;
+}
+
+
+.container .btn {
+  position: absolute;
+  top: 50px;
+  left: 750px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(135, 185, 192);
+  color: white;
+  font-size: 16px;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: rgb(0, 238, 255);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 400px;
+  left: 750px;
+  transform: translate(-50%, -50%);
+  font-family: "Monotype Corsiva", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(25, 0, 255), 0 0 5px rgb(47, 0, 255);
+  font-size: 55px;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03ffff, 0 0 40px #03ffff, 0 0 50px #03ffff, 0 0 60px #03ffff, 0 0 70px #03ffff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #03ffff, 0 0 40px #03ffff, 0 0 50px #03ffff, 0 0 60px #03ffff, 0 0 70px #03ffff, 0 0 80px #03ffff;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(33, 178, 189);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(159, 239, 245);
+  font-size: 20px;
+}
+
+li a.active {
+  color: white;
+  background-color: #00dbf8;
+  font-size: 20px;
+}
+.h1 {
+  font-family: "Forte", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Forte", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+.p1 {
+  font-family: "Lucida Handwriting", Times, serif;
+  font-size: 20px;
+  text-align: center;
+}
+.p2 {
+  font-family: "Tempus Sans ITC", Times, serif;
+  font-size: 20px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.columnmc {
+  float: left;
+  width: 80%;
+  padding: 0 10px;
+margin-left: 150;
+margin-top: 300;
+}
+.column {
+  float: right;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 150px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: rgb(19, 101, 117);
+  font-size: 30px;
+  font-family: "Bradley Hand ITC", Times, serif;
+  background-color: #6aeee7;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 500px;
+  padding: 10px;
+  height: 300px; 
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.gh {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Viner Hand ITC", Times, serif;
+}
+
+
+.clearfix {
+  overflow: auto;
+}
+
+.img2 {
+  float: right;
+}
+.p3 {
+  font-family: "Forte", Times, serif;
+  font-size: 40px; 
+}
+.p4 {
+  font-family: "Lucida Handwriting", Times, serif;
+  font-size: 20px;  
+}
+
+.p5 {
+  font-family: "Lucida Handwriting", Times, serif;
+  font-size: 20px;
+  text-align: center;
+  color: #74dddd;  
+}
+.h3 {
+  font-family: "Forte", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(25, 134, 161);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+
+  color: rgb(14, 14, 14);
+}
+
+.fa-twitter {
+ 
+  color: black;
+}
+
+.fa-google {
+  
+  color: black;
+}
+
+.fa-linkedin {
+
+  color: black;
+}
+
+.fa-youtube {
+  
+  color: black;
+}
+
+.fa-instagram {
+  
+  color: black;
+}
+
+.fa-pinterest {
+ 
+  color: black;
+}
+.p6 {
+  font-family: "Lucida Handwriting", Times, serif;
+  font-size: 20px;
+  text-align: center;
+  color: #74dddd;  
+}
+
+</style>
+</head>
+<body>
+ 
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li><a href="#contact">Courses</a></li>
+  <li><a href="#about">Contact Us</a></li>
+</ul>
+<div class="container">
+<img src="bh.png" alt="gahk" height="500px" width="1500px">
+  <div class="centered">
+  <h1 class="glow">CYBER WORLD ORGANIZATION</h1>
+</div></div>
+<br><br><br><br>
+<h1 class="h1">WELCOME TO CYBER WORLD ORGANIZATION</h1>
+<h2 class="h2">Build Your Career With</h2>
+
+
+<div class="column">
+  <div class="card">
+    <img src="13.jpg" alt="gahk" align="center" height="60px" width="50px" >
+   <p align="center">Guided career paths and role-based learning</p>    
+     </div>
+   </div>
+ <div class="column">
+    <div class="card">
+      <img src="14.jpg" alt="gahk" align="center" height="60px" width="50px" >
+        <p align="center">Hands-on experiences to gain real-world skills</p>
+      </div>
+   </div>
+<div class="column">
+  <div class="card">
+    <img src="16.png" alt="gahk" align="center" height="60px" width="50px" >
+      <p align="center">Dedicated mentors and professional networking</p>
+</div>
+
+</div>
+<div class="column">
+  <div class="card">
+    <img src="21.jpg" alt="gahk" align="center" height="60px" width="50px" >
+     <p align="center">Industry certification courses with practice tests</p>
+</div>
+
+</div>
+</div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 class="h2">Practice What You Learn</h2>
+<p class="p1">Hands-on learning experiences provide the most engaging and effective way to learn real-world concepts and skills that you need to be successful.<br> We build and aggregate over 1,000 secure, browser-based virtual labs, practice tests, and assessments in fields such as cybersecurity, IT, cloud technologies, data science, and more.</p>
+
+<br><br><br>
+<div class="row">
+  <div class="column1" style="background-color:white;">
+    <img src="r1.png" alt="gahk" align="center" height="60px" width="50px" >
+    <h2>Certification Preparation</h2>
+    <p class="p2">Prepare for in-demand industry certifications with courses, virtual labs, and practice tests tied directly to the exam’s learning objectives.</p>
+  </div>
+  <div class="column1" style="background-color:white;">
+    <img src="r2.png" alt="gahk" align="center" height="60px" width="50px" >
+    <h2>Virtual Labs</h2>
+    <p class="p2">Get the hands-on experience businesses are looking for with hundreds of browser-based virtual labs that allow you to work with industry applications and technologies in objective-based scenarios, securely, from wherever you are.</p>
+  </div>
+  <div class="column1" style="background-color:white;">
+    <img src="r3.png" alt="gahk" align="center" height="60px" width="50px" >
+    <h2>Skills Development and Assessment
+    </h2>
+    <p class="p2">Track your career development and understand your strengths and weaknesses with over 200 skill assessments, that provide clarity on your next step.</p>
+  </div>
+</div>
+<br>
+<p class="gh">
+  CWO Skills is a very good place for building technical acumen and engineering development knowledge. It enables us to provide training to the entire team on relevant topics.</p>
+
+  <div class="clearfix"><br>
+    <img class="img2" src="11.png"  width="300" height="350">
+    <p class="p3">Learn from the best in CWO</p>
+    
+    <p class="p4">CWO puts the collective knowledge of top subject matter experts and leading organizations in the cybersecurity industry at your fingertips. Our ever-growing network enables us to move quickly with emerging trends and new technologies to deliver timely, quality content, tools, and resources. CWO leverages our partnerships to provide a myriad of learning opportunities to develop your cybersecurity skills and help you achieve your career goals.</p>
+  </div>
+
+<h2 class="h3">Ready to Transform your Career?</h2>
+<marquee behavior="scroll" direction="left" scrollamount="13"><p5 class="p5">You don’t need to be a techie! We need you as much even if you’re an artist.</p5></marquee>
+<div class="container .btn">
+  <button class="btn">JOIN US</button>
+</div><br><br><br><br><br><br>
+  <footer>
+    <p CLASS="p6">CONNECT US</p>
+    <BR><BR>
+    <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+  </footer>
+
+</body>
+</html>
+
